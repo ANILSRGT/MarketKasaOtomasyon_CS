@@ -1,0 +1,10 @@
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\bin\Debug\MarketKasaOtomasyon.exe.config
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\bin\Debug\MarketKasaOtomasyon.exe
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\bin\Debug\MarketKasaOtomasyon.pdb
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\obj\Debug\MarketKasaOtomasyon.csprojAssemblyReference.cache
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\obj\Debug\MarketKasaOtomasyon.exe
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\obj\Debug\MarketKasaOtomasyon.pdb
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\bin\Debug\MarketKasaOtomasyon.exe.manifest
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\bin\Debug\MarketKasaOtomasyon.application
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\obj\Debug\MarketKasaOtomasyon.exe.manifest
+D:\GitHub\VisualStudio2019_Projects\MarketKasaOtomasyon\MarketKasaOtomasyon\obj\Debug\MarketKasaOtomasyon.application
