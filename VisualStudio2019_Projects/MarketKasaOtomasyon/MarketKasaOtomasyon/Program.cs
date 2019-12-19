@@ -11,8 +11,9 @@ namespace MarketKasaOtomasyon
     {
         static void Main(string[] args)
         {
+            Market market = new Market();
             string productName; //ÜRÜN İSMİ
-            double productPrice; //ÜRÜN FİYATI
+            //double productPrice; //ÜRÜN FİYATI
             int productCode; //ÜRÜN KODU
             int selectNumber; //İŞLEM YAPILACAK SAYI
             ConsoleSetting(); //KONSOL AYARLARINI YAPAN FONKSİYONU ÇAĞIRIYOR.
@@ -40,7 +41,7 @@ namespace MarketKasaOtomasyon
                     Console.Write("Ürün ismi giriniz: ");
                     productName = Console.ReadLine(); //ÜRÜN İSMİNİ ALIYOR.
                     Console.Write("(Ondalıklı sayı için virgül ',' kullanınız!) Fiyat giriniz: ");
-                    productPrice = Math.Abs(Double.Parse(Console.ReadLine())); //ÜRÜN FİYATINI ALIYOR. (MUTLAK DEĞER İÇİNDE)
+                    market.ProductPrice = Math.Abs(Double.Parse(Console.ReadLine())); //ÜRÜN FİYATINI ALIYOR. (MUTLAK DEĞER İÇİNDE)
                     Console.Write("(En fazla 5 haneli) Ürün kodu giriniz: ");
                     productCode = Int32.Parse(Console.ReadLine()); //ÜRÜN KODUNU ALIYOR.
                     if (productCode > 99999 || productCode < 1) //ÜRÜN KODU 1-99999 (1 ile 99999 dahil) ARASINDA OLMAZSA
@@ -49,7 +50,7 @@ namespace MarketKasaOtomasyon
                         Console.WriteLine("\nLütfen 1-99999 (1 ile 99999 dahil) arasında giriniz!");
                         goto producterror;
                     }
-                    ProductAdd(productCode, productName, productPrice); //ÜRÜN EKLEME FONKSİYONUNU ÇAĞIRIYOR.
+                    ProductAdd(productCode, productName, market.ProductPrice); //ÜRÜN EKLEME FONKSİYONUNU ÇAĞIRIYOR.
                     goto mainstart;
                 case 3:
                 producterror2:
@@ -352,6 +353,20 @@ namespace MarketKasaOtomasyon
             barcodenumber += controlCode; //KONTROL KODU YERLEŞTİRİLİYOR.
 
             return barcodenumber; //OLUŞTURULAN BARKOD KODU GERİ DÖNDÜRÜLÜYOR.
+        }
+
+        private double productPrice = 0;
+
+        public double ProductPrice
+        {
+            get
+            {
+                return productPrice;
+            }
+            set
+            {
+                productPrice = Math.Abs(value);
+            }
         }
     }
 }
